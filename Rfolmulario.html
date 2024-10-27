@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Talk - Checkout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/rform.css">
+</head>
+<body class="custom-bg">
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Best Talk</div>
+      <ul>
+        <li>
+          <a href="#" id="search-icon">
+            <svg enable-background="new 0 0 32 32" id="Glyph" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+              <path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z"/>
+            </svg>
+          </a>
+        </li>
+        <li><input type="text" id="search-bar" placeholder="Buscar..." class="search-input" /></li>
+        <li><a href="inicio.html">INICIO</a></li>
+        <li><a href="tienda.html">TIENDA</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+      </ul>
+    </nav>      
+  </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Customer Information -->
+        <section class="section">
+            <h2 class="lobster">1. Datos del cliente</h2>
+            <div class="form-group">
+                <input type="text" class="input-lobster" placeholder="Nombre">
+                <input type="email" class="input-lobster" placeholder="Correo">
+            </div>
+            <div class="form-group">
+                <input type="text" class="input-lobster" placeholder="Dirección">
+                <input type="tel" class="input-lobster" placeholder="Teléfono">
+            </div>
+        </section>
+
+        <!-- Payment Method -->
+        <section class="section">
+            <h2 class="lobster">2. Forma de pago</h2>
+            <div class="payment-buttons">
+                <button class="button lobster">Tarjeta</button>
+                <button class="button lobster">Efectivo</button>
+            </div>
+        </section>
+
+        <!-- Items -->
+        <section class="section">
+            <h2 class="lobster">3. Artículos</h2>
+            <div class="item">
+                <img src="assets/fidelidadh.png" alt="Fidelidad">
+                <div>
+                    <h3>Fidelidad</h3>
+                    <p class="price">DVD $70</p> <!-- Cambié el orden aquí -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary -->
+        <section class="summary">
+            <h3 class="lobster">Resumen de compra</h3>
+            <p>Sub total: <span>$70</span></p>
+            <p>Cupón: <span>$0</span></p>
+            <p>Total: <span class="total">$70</span></p>
+            <div class="finalize-button">
+                <button class="button lobster" onclick="confirmarCompra()">Finalizar compra</button> <!-- Agregado el evento onclick -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="left">
+                <a href="about.html">ABOUT US</a>
+                <a href="privacy.html">POLÍTICA DE PRIVACIDAD</a>
+                <a href="tienda.html">TIENDA</a>
+            </div>
+            <div class="right">
+                <label for="email" class="contact-title">Contáctanos:</label>
+                <form>
+                    <input type="email" id="email" class="input-lobster" placeholder="Correo">
+                    <button1 type="button" onclick="suscribirse()">Inscribirse</button1>
+                </form>
+                <label class="follow-us">Síguenos:</label>
+                <div class="social-icons">
+                    <div class="icon"><img src="assets/instagram.png" alt="Instagram"></div>
+                    <div class="icon"><img src="assets/face.png" alt="Facebook"></div>
+                    <div class="icon"><img src="assets/tw.png" alt="Twitter"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function confirmarCompra() {
+            alert("Compra exitosa");
+            window.location.href = "inicio.html"; 
+        }
+    </script>
+</body>
+</html>

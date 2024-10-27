@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rcarrito</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster+Two&display=swap" rel="stylesheet"> <!-- Agregado Lobster Two -->
+  <link href="assets/rcar.css" rel="stylesheet">
+</head>
+<body class="custom-bg">
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Best Talk</div>
+      <ul>
+        <li>
+          <a href="#" id="search-icon">
+            <svg enable-background="new 0 0 32 32" id="Glyph" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+              <path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z"/>
+            </svg>
+          </a>
+        </li>
+        <li><input type="text" id="search-bar" placeholder="Buscar..." class="search-input" /></li>
+        <li><a href="inicio.html">INICIO</a></li>
+        <li><a href="tienda.html">TIENDA</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+      </ul>
+    </nav>      
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-8 mt-28">
+    <section class="bg-[#C5C1B6] p-6 rounded-lg shadow-md">
+      <div class="flex">
+        <!-- Text Section with Centered Title -->
+        <div class="w-1/2 text-center">
+          <h2 class="text-6xl lobster mb-4">Fidelidad</h2> <!-- Cambié a Lobster Two -->
+          <p class="text-4xl mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur finibus tincidunt dui sit amet feugiat. Integer porta tempus mauris, et efficitur tellus consectetur at. Suspendisse sit amet maximus metus. Nulla auctor, mi vel ullamcorper bibendum, purus dolor rutrum purus, eget blandit turpis nisl in libero. Nulla libero enim, varius id velit ut, bibendum aliquet dui. Maecenas fermentum no.</p>
+          <p class="text-4xl mb-4">Phasellus ultrices nisl eget nulla suscipit, a vehicula tortor tincidunt. Ut auctor, magna vel tempor dapibus, tortor risus cursus ex, a pulvinar orci enim et metus. Vivamus sit amet augue et lorem vehicula vestibulum. Etiam at ligula fermentum, congue eros vel, convallis eros. Pellentesque nec interdum elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi at orci non orci rhoncus vehicula. Sed vehicula lorem non nulla dapibus, nec gravida nisi facilisis.</p>
+          <p class="text-4xl mb-4">Proin condimentum risus nec semper placerat. Curabitur tincidunt magna a velit fringilla fermentum. Nulla rhoncus eros sed dui volutpat, sed aliquet est condimentum. Donec condimentum varius erat. Mauris dignissim, libero eget fermentum gravida, odio arcu luctus ligula, eget suscipit orci ipsum at libero. Aenean sit amet nibh id nunc fermentum volutpat. In ut urna nec nisi suscipit convallis at sit amet quam. Sed venenatis malesuada volutpat.</p>
+        </div>
+
+        <!-- Image and DVD Section -->
+        <div class="w-1/2 text-center">
+          <img src="assets/fidelidadh.png" alt="A romantic scene from the movie Fidelidad" class="w-full h-auto rounded-lg shadow-md mb-4">
+          <div class="flex justify-center items-center dvd-container px-4 py-2 rounded-lg w-full lobster">
+            <span>DVD</span>
+            <span class="text-lg font-bold ml-4">$70</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subtotal and Discount Section -->
+      <div class="p-4 rounded-lg shadow-md mt-4 text-center custom-bg">
+        <div class="flex justify-center items-center mb-4 lobster">
+          <span class="font-bold">SUBTOTAL</span>
+          <span class="text-lg font-bold ml-4">$70</span>
+        </div>
+        <div class="flex justify-center items-center mb-4 space-x-4">
+          <input type="text" class="border p-2 rounded-lg w-1/2 lobster" placeholder="Ingresa el código de descuento">
+          <button class="apply-button px-4 py-2 rounded-lg lobster">Aplicar</button>
+        </div>
+        <div class="flex justify-center items-center mb-4 lobster">
+          <span class="font-bold">TOTAL Estimado</span>
+          <span class="text-lg font-bold ml-4">$70</span>
+        </div>
+
+        <!-- Buttons for Purchase -->
+        <div class="flex flex-col justify-center items-center space-y-4 mt-6">
+          <a href="Rfolmulario.html">
+            <button class="bg-black text-white px-4 py-2 rounded-lg lobster">Comprar ahora</button>
+          </a>
+          <a href="tienda.html">
+            <button class="bg-white border border-black text-black px-4 py-2 rounded-lg lobster">Continuar comprando</button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+        <div class="left">
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">POLÍTICA DE PRIVACIDAD</a>
+            <a href="tienda.html">TIENDA</a>
+        </div>
+        <div class="right">
+            <label for="email" class="contact-title">Contáctanos:</label>
+            <form>
+                <input type="email" id="email" placeholder="Correo">
+                <button1 type="button" onclick="suscribirse()">Inscribirse</button1> <!-- Cambiado a type="button" -->
+            </form>
+            <label class="follow-us">Síguenos:</label>
+            <div class="social-icons">
+              <div class="icon"><img src="assets/instagram.png" alt="Instagram"></div>
+              <div class="icon"><img src="assets/face.png" alt="Facebook"></div>
+              <div class="icon"><img src="assets/tw.png" alt="Twitter"></div>
+            </div>
+            <p>&copy; 2024 Best Talk</p>
+        </div>
+    </div>
+  </footer>
+
+    <script>
+      //boton inscribirse
+      function suscribirse() {
+                // Por ahora no hace nada, evita la redirección y desplazamiento
+                console.log("Botón de suscripción clickeado");
+            }
+    </script>
+
+  <script>
+    // Mostrar campo de búsqueda
+    const searchIcon = document.getElementById('search-icon');
+    const searchInput = document.getElementById('search-bar');
+
+    searchIcon.addEventListener('click', function () {
+      searchInput.style.display = searchInput.style.display === 'none' || searchInput.style.display === '' ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

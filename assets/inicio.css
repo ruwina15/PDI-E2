@@ -1,0 +1,352 @@
+/* css de la navbar y para la imagen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    background: url('inicio.jpg') no-repeat center center/cover; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: linear-gradient(to bottom, rgba(176, 174, 174, 0.8), rgba(67, 67, 67, 0.4)); /* Gris oscuro con 80% de opacidad en la parte superior y 40% en la parte inferior */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(159, 154, 164, 0.5); /* Sombra suave con el color #9f9aa4 */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque de fondo */
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #0f0b0b;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center; /* Alinear verticalmente el ícono y la barra de búsqueda */
+}
+
+.navbar ul li {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #0f0b0b;
+    font-size: 18px;
+    font-family: 'Kadwa', serif;
+    position: relative; 
+    top: 10px; 
+}
+
+/* icono lupa y barra de busqueda */
+.search-input {
+    display: none; /* Ocultar la barra de búsqueda inicialmente */
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #0f0b0b;
+    border-radius: 5px;
+}
+
+#search-icon {
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el ícono */
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Lobster Two', sans-serif;
+    color: white; 
+    text-shadow: 
+        -2px -2px 0 #000000,  /* Borde negro superior izquierda */
+        2px -2px 0 #000000,   /* Borde negro superior derecha */
+        -2px 2px 0 #000000,   /* Borde negro inferior izquierda */
+        2px 2px 0 #000000,    /* Borde negro inferior derecha */
+        -2px 0 0 #000000,     /* Borde adicional a la izquierda */
+        2px 0 0 #000000,      /* Borde adicional a la derecha */
+        0 2px 0 #000000,      /* Borde adicional abajo */
+        0 -2px 0 #000000,     /* Borde adicional arriba */
+        4px 4px 5px rgba(0, 0, 0, 0.5); /* Sombra difuminada para profundidad */
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 9px;
+    transition: background-color 0.3s;
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 20px; 
+    margin-top: 28px; 
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+
+/* css de las categorias */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.categorias {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.categorias h2 {
+    font-family: 'Lobster Two', sans-serif; 
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.categoria {
+    width: 340px;  /* Ancho */
+    height: 324px; /* Alto */
+    background-color: #CFD8D7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s;
+}
+
+.categoria img {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.categoria p {
+    font-size: 22px;
+    margin: 0;
+    font-family: 'Kadwa', serif; 
+    font-weight: 400; 
+}
+
+/* Efecto hover para las categorias */
+.categoria:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* css seccion mas vendido */
+
+.mas-vendido {
+    background-image: url('seccion.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.mas-vendido h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: 'Lobster Two', sans-serif; 
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 0;
+    max-width: 320px; /* Ajustamos el ancho máximo */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.producto button {
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    bottom: 0; /* Ajusta la distancia desde el fondo de la imagen */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%);
+    background-color: #8c72b5;
+    color: rgb(11, 6, 6);
+    font-family: 'Lobster Two', sans-serif; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%; /* El botón ocupa todo el ancho de la imagen */
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #6b5794;
+}
+
+/* Efecto Hover conjunto para imagen y botón */
+.producto:hover {
+    transform: scale(1.05); /* Efecto de zoom sobre todo el producto */
+}
+
+.producto:hover img {
+    transform: scale(1.05); /* Zoom en la imagen */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    height: 380px;
+    background-image: url('footer.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-family: 'Lobster Two', sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left a {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.contact-title,
+.follow-us {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: 'Lobster Two', sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #339989;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Lobster Two', sans-serif;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img {
+    width: 28px;
+    height: 28px;
+}
+
+p {
+    font-size: 20px;
+    color: #000;
+    margin-top: 15px;
+}

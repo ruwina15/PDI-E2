@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Talk - Acción</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet"/>
+  <link href="assets/accion.css" rel="stylesheet">
+</head>
+<body class="bg-[#C5C1B6] font-sans">
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Best Talk</div>
+      <ul>
+        <li>
+          <a href="#" id="search-icon">
+            <svg enable-background="new 0 0 32 32" id="Glyph" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+              <path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z"/>
+            </svg>
+          </a>
+        </li>
+        <li><input type="text" id="search-bar" placeholder="Buscar..." class="search-input" /></li>
+        <li><a href="inicio.html">INICIO</a></li>
+        <li><a href="tienda.html">TIENDA</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+      </ul>
+    </nav>      
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-32 p-8">
+    <h1 class="text-center text-4xl title-romance mb-2">Acción</h1>
+    <div class="flex justify-center mb-8">
+      <!-- Ícono de máscaras de teatro -->
+      <img src="assets/pistola.svg" alt="Drama Masks Icon" width="40" height="40">
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Book 1 -->
+      <div class="flex flex-col items-center">
+        <a href="Acompra.html">
+          <img alt="Cover of the book 'Fidelidad' showing a couple embracing" class="mb-2" height="300" src="assets/mortal.png" width="250"/>
+          <div class="movie-title">Velocidad Mortal</div>
+          <div class="movie-price text-red-500">$99</div>
+        </a>
+      </div>
+
+      <!-- Book 2 -->
+      <div class="flex flex-col items-center">
+        <img alt="Cover of the book 'Caminando bajo la lluvia' showing a person walking in the rain" class="mb-2" height="300" src="assets/alta.png" width="250"/>
+        <div class="movie-title">Alta Velocidad</div>
+        <div class="movie-price text-red-500">$80</div>
+      </div>
+
+      <!-- Book 3 -->
+      <div class="flex flex-col items-center">
+        <img alt="Cover of the book 'El romance perdido' showing a couple looking at each other" class="mb-2" height="300" src="assets/flan.png" width="250"/>
+        <div class="movie-title">Flan</div>
+        <div class="movie-price text-red-500">$75</div>
+      </div>
+
+      <!-- Book 4 -->
+      <div class="flex flex-col items-center">
+        <img alt="Cover of the book 'A una semana en Paris' showing a couple in Paris" class="mb-2" height="300" src="assets/man.png" width="250"/>
+        <div class="movie-title">Mans</div>
+        <div class="movie-price text-red-500">$100</div>
+      </div>
+
+      <!-- Book 5 -->
+      <div class="flex flex-col items-center">
+        <img alt="Cover of the book 'The Lady of Highwayman' showing a woman in historical attire" class="mb-2" height="300" src="assets/oper.png" width="250"/>
+        <div class="movie-title">Operación sin retorno</div>
+        <div class="movie-price text-red-500">$95</div>
+      </div>
+
+      <!-- Book 6 -->
+      <div class="flex flex-col items-center">
+        <img alt="Cover of the book 'Fidelidad' showing a couple dancing" class="mb-2" height="300" src="assets/comman.png" width="250"/>
+        <div class="movie-title">Comman Ga</div>
+        <div class="movie-price text-red-500">$100</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+        <div class="left">
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">POLÍTICA DE PRIVACIDAD</a>
+            <a href="tienda.html">TIENDA</a>
+        </div>
+        <div class="right">
+            <label for="email" class="contact-title">Contáctanos:</label>
+            <form>
+                <input type="email" id="email" placeholder="Correo">
+                <button1 type="submit">Inscribirse</button1>
+            </form>
+            <label class="follow-us">Síguenos:</label>
+            <div class="social-icons">
+              <div class="icon"><img src="assets/instagram.png" alt="Instagram"></div>
+              <div class="icon"><img src="assets/face.png" alt="Facebook"></div>
+              <div class="icon"><img src="assets/tw.png" alt="Twitter"></div>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mostrar barra de búsqueda al hacer clic en el icono de búsqueda
+    document.getElementById('search-icon').onclick = function() {
+      var searchInput = document.getElementById('search-bar');
+      if (searchInput.style.display === 'none' || searchInput.style.display === '') {
+        searchInput.style.display = 'inline-block';
+        searchInput.focus();
+      } else {
+        searchInput.style.display = 'none';
+      }
+    };
+  </script>
+
+</body>
+</html>
